@@ -1,0 +1,20 @@
+// 1-10_SH, js
+
+var user = {
+    name: 'Seonghyeon',
+    gender: 'male',
+  };
+  
+  var changeName = function(user, newName) {
+    var newUser = user;
+    newUser.name = newName;
+    return newUser;
+  };
+  
+  var user2 = changeName(user, 'Cho');
+  
+  if (user !== user2) {
+    console.log('유저 정보가 변경되었습니다.');
+  }
+  console.log(user.name, user2.name); // Cho Cho
+  console.log(user === user2);
